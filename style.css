@@ -47,16 +47,12 @@ section {
     color: #2563EB;
 }
 
-.menu-btn i {
+#menu, #cross {
     display: none;
 }
 
 label {
     align-self: center;
-}
-
-input {
-    display: none;
 }
 
 /* Logo Container */
@@ -342,12 +338,17 @@ flex: 2 1 700px;
     .header-link {
         position: fixed;
         top: 80px;
-        right: -110%;
+        right: 0%;
         flex-direction: column;
         background-color: #1B2632;
         width: 100%;
         padding: 20px;
-        transition: all 0.5s ease;
+        transform: translateX(110%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .open {
+        transform: translateX(0%);
     }
 
     .header-link a {
@@ -355,8 +356,15 @@ flex: 2 1 700px;
         margin: 10px 0;
     }
 
-    .menu-btn i {
+    #menu {
         display: block;
+        cursor: pointer;
+        margin-right: 15px;
+        font-size: 1.5rem;
+    }
+
+    #cross {
+        display: none;
         cursor: pointer;
         margin-right: 15px;
         font-size: 1.5rem;
@@ -364,14 +372,6 @@ flex: 2 1 700px;
 
     .header-link a:hover {
         color: #60A5FA;
-    }
-
-    #click:checked ~ .header-link {
-        right: 0;
-    }
-
-    #click:checked ~ .menu-btn i::before {
-        content: "\f00d";
     }
 
     .display-1 {
