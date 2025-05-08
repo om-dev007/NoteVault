@@ -415,23 +415,36 @@
         }
       });
 
-      cross
-        .addEventListener("click", () => {
-          if (window.innerWidth <= 800) {
-            menu.style.display = "block";
-            cross.style.display = "none";
-            headerLink.classList.remove("open");
-          }
-        })
-
-        if(window.innerWidth <= 800) {
-            Feature.addEventListener("click", () => {
-                headerLink.classList.remove("open");
-                menu.style.display = "block";
-                cross.style.display = "none";
-            })
+      cross.addEventListener("click", () => {
+        if (window.innerWidth <= 800) {
+          menu.style.display = "block";
+          cross.style.display = "none";
+          headerLink.classList.remove("open");
         }
+      });
 
+      if (window.innerWidth <= 800) {
+        Feature.addEventListener("click", () => {
+          headerLink.classList.remove("open");
+          menu.style.display = "block";
+          cross.style.display = "none";
+        });
+        Contact.addEventListener("click", () => {
+          headerLink.classList.remove("open");
+          menu.style.display = "block";
+          cross.style.display = "none";
+        });
+        Signup.addEventListener("click", () => {
+          headerLink.classList.remove("open");
+          menu.style.display = "block";
+          cross.style.display = "none";
+        });
+        Login.addEventListener("click", () => {
+          headerLink.classList.remove("open");
+          menu.style.display = "block";
+          cross.style.display = "none";
+        });
+      }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
