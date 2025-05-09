@@ -66,7 +66,7 @@
             Securely save and access your notes online from any devices.
           </p>
         </div>
-        <div data-aos="fade-up"
+        <div data-aos="fade-right"
         data-aos-delay="400"
         data-aos-duration="800" class="mt-sm-3 mt-md-3 mt-lg-4 text-center">
           <a  class="btn btn-primary fs-3" href="./signup.html">Get Started</a>
@@ -80,13 +80,19 @@
           data-aos-duration="800"
           class="mt-lg-4 mt-md-5 mt-sm-5 pt-5"
         >
-          <div class="text-center">
+          <div  data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="800" class="text-center">
             <small class="text-muted text-uppercase fs-3">Features</small>
           </div>
-          <h1 class="text-center fw-bolder display-5 mt-3 mb-4">
+          <h1  data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="800" class="text-center fw-bolder display-5 mt-3 mb-4">
             Why Choose NoteVault?
           </h1>
-          <h3 class="text-center fw-light text-wrap mt-3 mb-5">
+          <h3  data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="800" class="text-center fw-light text-wrap mt-3 mb-5">
             Powerful features built for simplicity, security, and access from
             anywhere.
           </h3>
@@ -153,7 +159,7 @@
 
       <section class="pt-5">
         <div
-          data-aos="fade-up"
+          data-aos="fade-right"
           data-aos-delay="400"
           data-aos-duration="800"
           class="text-center mb-md-3 mb-sm-2 mb-lg-4"
@@ -229,7 +235,9 @@
       </section>
 
       <section class="pt-5">
-        <div class="text-center mb-3">
+        <div  data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="800" class="text-center mb-3">
           <small class="text-primary text-uppercase fs-3">How it works</small>
         </div>
         <h3
@@ -299,7 +307,9 @@
           </div>
         </div>
         <div class="text-center mt-5 mb-5">
-          <a
+          <a  data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="800"
             class="text-decoration-none btn btn-primary fs-3 text-white"
             href="./signup.html"
             >Start Now</a
@@ -311,7 +321,7 @@
         <div class="footer-container">
           <div class="footer-logo">
             <div
-              data-aos="fade-up"
+              data-aos="fade-down"
               data-aos-delay="400"
               data-aos-duration="800"
               class="logo-container mb-4"
@@ -329,7 +339,7 @@
           </div>
 
           <div
-            data-aos="fade-up"
+            data-aos="fade-down"
             data-aos-delay="400"
             data-aos-duration="800"
             class="footer-links"
@@ -401,54 +411,7 @@
         </div>
       </footer>
     </div>
-    <script>
-      const Feature = document.getElementById("Feature");
-      const Contact = document.getElementById("Contact");
-      const Login = document.getElementById("Login");
-      const Signup = document.getElementById("Signup");
-      const menu = document.getElementById("menu");
-      const cross = document.getElementById("cross");
-      const headerLink = document.getElementById("header-link");
-
-      menu.addEventListener("click", () => {
-        if (window.innerWidth <= 800) {
-          headerLink.classList.add("open");
-          cross.style.display = "block";
-          menu.style.display = "none";
-        }
-      });
-
-      cross.addEventListener("click", () => {
-        if (window.innerWidth <= 800) {
-          menu.style.display = "block";
-          cross.style.display = "none";
-          headerLink.classList.remove("open");
-        }
-      });
-
-      if (window.innerWidth <= 800) {
-        Feature.addEventListener("click", () => {
-          headerLink.classList.remove("open");
-          menu.style.display = "block";
-          cross.style.display = "none";
-        });
-        Contact.addEventListener("click", () => {
-          headerLink.classList.remove("open");
-          menu.style.display = "block";
-          cross.style.display = "none";
-        });
-        Signup.addEventListener("click", () => {
-          headerLink.classList.remove("open");
-          menu.style.display = "block";
-          cross.style.display = "none";
-        });
-        Login.addEventListener("click", () => {
-          headerLink.classList.remove("open");
-          menu.style.display = "block";
-          cross.style.display = "none";
-        });
-      }
-    </script>
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
