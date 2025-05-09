@@ -335,10 +335,10 @@ flex: 2 1 700px;
 }
 @media (min-width: 801px) {
     #menu {
-        display: none;
+        display: none !important;
     }
     #cross {
-        display: none;
+        display: none !important;
     }
 }
 
